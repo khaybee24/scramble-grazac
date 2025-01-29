@@ -7,11 +7,13 @@ const connectDB = require('./Database/db')
 const path = require('path')
 const cors = require("cors");
 const env = require('dotenv').config()
+const morgan = require('morgan');
 
 
 
 app.use(express.json());
 app.use(cors());
+app.use(morgan('dev'));
 app.use('/api/v1/game',game)
 app.use('/api/v1/word', wordRouter)
 
@@ -29,6 +31,6 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, ()=>{
-    console.log(`server is listening on http://localhost:${port}`);
+    console.log(`server is listening on https://scramble-topaz.vercel.app/`);
     
 })
