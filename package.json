@@ -16,11 +16,9 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongoose": "^8.9.5",
-    "sinon": "^19.0.2",
-    "sinon-chai": "^4.0.0"
+    "sinon": "^19.0.2"
   },
   "devDependencies": {
-    "chai": "^5.1.2",
     "mocha": "^11.1.0"
   }
 }
