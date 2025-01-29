@@ -1,0 +1,26 @@
+{
+  "name": "word-scramble-grazac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.0",
+    "chai-http": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5",
+    "sinon": "^19.0.2",
+    "sinon-chai": "^4.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^11.1.0"
+  }
+}
