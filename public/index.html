@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scramble Game</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Word Scramble Game</h1>
+
+    <label for="username">Enter your username:</label>
+    <input type="text" id="username" placeholder="Username">
+
+    <button id="scrambleBtn">Get Scrambled Word</button>
+    <p id="scrambledWord"></p>
+    <p><strong>Time Left:</strong> <span id="timeLeft">0</span> seconds</p>
+    <p><strong>Your Score:</strong> <span id="userScore">0</span></p>
+
+    <label for="userGuess">Your Guess:</label>
+    <input type="text" id="userGuess" placeholder="Enter your guess">
+    <button id="submitGuessBtn">Submit Guess</button>
+    <p id="guessResult"></p>
+</body>
+</html>
