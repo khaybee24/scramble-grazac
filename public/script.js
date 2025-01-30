@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentUsername = username; // Set the current username for the game
 
         try {
-            const response = await fetch(`http://localhost:4900/api/v1/game/scramble?username=${username}`);
+            const response = await fetch(`https://scramble-topaz.vercel.app/api/v1/game/scramble?username=${username}`);
             const data = await response.json();
 
             if (response.ok) {
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         try {
-            const response = await fetch("http://localhost:4900/api/v1/game/guess", {
+            const response = await fetch("https://scramble-topaz.vercel.app/api/v1/game/guess", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ username: currentUsername, guess })
