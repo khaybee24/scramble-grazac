@@ -13,7 +13,7 @@ const morgan = require('morgan');
 
 app.use(express.json());
 app.use(cors({
-    origin: 'https://scramble-topaz.vercel.app', // Allow only your frontend domain
+    origin: '*', // Allow only your frontend domain
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type']
 }));
