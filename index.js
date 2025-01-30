@@ -31,6 +31,6 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, ()=>{
-    console.log(`server is listening on https://scramble-topaz.vercel.app/`);
+    console.log(`server is listening on http://localhost:4900/`);
     
 })
