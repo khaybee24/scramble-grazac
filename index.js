@@ -12,7 +12,11 @@ const morgan = require('morgan');
 
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: 'https://your-frontend-domain.com', // Allow only your frontend domain
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type']
+}));
 app.use(morgan('dev'));
 app.use('/api/v1/game',game)
 app.use('/api/v1/word', wordRouter)
